@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="jp" class="dark scroll-smooth" id="root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="farideghbali">
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./css/output.css">
+    <title>株式会社Q-innovations</title>
+</head>
+<body class="bg-white dark:bg-dark seceltion font-Inter">
+<div class="fixed top-0 left-0 z-50 w-full">
+    <div class="px-4 py-4 lg:px-8 lg:py-1" id="header">
+        <div class="flex items-center justify-between">
+            <div class="logo">
+                <img src="./img/logo-light.png" alt="logo" class="hidden dark:block">
+                <img src="./img/logo.png" alt="logo" class="block dark:hidden">
+            </div>
+            <div>
+                <nav class="navigation hidden lg:block">
+                    <ul class="flex items-center justify-between">
+                        <li class="px-6 py-4"><a href="#top" class="menu-item">TOP</a></li>
+                        <li class="px-6 py-4"><a href="#features" class="menu-item">事業内容</a></li>
+                        <li class="px-6 py-4"><a href="#experience" class="menu-item">実績</a></li>
+                        <li class="px-6 py-4"><a href="#company-data" class="menu-item">会社案内</a></li>
+                        <li class="px-6 py-4"><a href="#contact-us" class="menu-item">問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="panel flex items-center">
+                <button type="button" class="cursor-pointer" id="change-mood">
+                    <svg viewBox="0 0 23 23" class="cursor-pointer block dark:hidden" fill=""
+                         xmlns="http://www.w3.org/2000/svg" width="30px">
+                        <path d="M9.55078 1.5C5.80078 1.5 1.30078 5.25 1.30078 11.25C1.30078 17.25 5.80078 21.75 11.8008 21.75C17.8008 21.75 21.5508 17.25 21.5508 13.5C13.3008 18.75 4.30078 9.75 9.55078 1.5Z"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                    <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="30px"
+                         class="cursor-pointer dark:block hidden">
+                        <mask id="path-1-inside-1_977:1934" fill="white">
+                            <path d="M12.0508 16.5C10.8573 16.5 9.71271 16.0259 8.8688 15.182C8.02489 14.3381 7.55078 13.1935 7.55078 12C7.55078 10.8065 8.02489 9.66193 8.8688 8.81802C9.71271 7.97411 10.8573 7.5 12.0508 7.5C13.2443 7.5 14.3888 7.97411 15.2328 8.81802C16.0767 9.66193 16.5508 10.8065 16.5508 12C16.5508 13.1935 16.0767 14.3381 15.2328 15.182C14.3888 16.0259 13.2443 16.5 12.0508 16.5ZM12.0508 18C13.6421 18 15.1682 17.3679 16.2934 16.2426C17.4186 15.1174 18.0508 13.5913 18.0508 12C18.0508 10.4087 17.4186 8.88258 16.2934 7.75736C15.1682 6.63214 13.6421 6 12.0508 6C10.4595 6 8.93336 6.63214 7.80814 7.75736C6.68292 8.88258 6.05078 10.4087 6.05078 12C6.05078 13.5913 6.68292 15.1174 7.80814 16.2426C8.93336 17.3679 10.4595 18 12.0508 18ZM12.0508 0C12.2497 0 12.4405 0.0790176 12.5811 0.21967C12.7218 0.360322 12.8008 0.551088 12.8008 0.75V3.75C12.8008 3.94891 12.7218 4.13968 12.5811 4.28033C12.4405 4.42098 12.2497 4.5 12.0508 4.5C11.8519 4.5 11.6611 4.42098 11.5205 4.28033C11.3798 4.13968 11.3008 3.94891 11.3008 3.75V0.75C11.3008 0.551088 11.3798 0.360322 11.5205 0.21967C11.6611 0.0790176 11.8519 0 12.0508 0V0ZM12.0508 19.5C12.2497 19.5 12.4405 19.579 12.5811 19.7197C12.7218 19.8603 12.8008 20.0511 12.8008 20.25V23.25C12.8008 23.4489 12.7218 23.6397 12.5811 23.7803C12.4405 23.921 12.2497 24 12.0508 24C11.8519 24 11.6611 23.921 11.5205 23.7803C11.3798 23.6397 11.3008 23.4489 11.3008 23.25V20.25C11.3008 20.0511 11.3798 19.8603 11.5205 19.7197C11.6611 19.579 11.8519 19.5 12.0508 19.5ZM24.0508 12C24.0508 12.1989 23.9718 12.3897 23.8311 12.5303C23.6905 12.671 23.4997 12.75 23.3008 12.75H20.3008C20.1019 12.75 19.9111 12.671 19.7705 12.5303C19.6298 12.3897 19.5508 12.1989 19.5508 12C19.5508 11.8011 19.6298 11.6103 19.7705 11.4697C19.9111 11.329 20.1019 11.25 20.3008 11.25H23.3008C23.4997 11.25 23.6905 11.329 23.8311 11.4697C23.9718 11.6103 24.0508 11.8011 24.0508 12ZM4.55078 12C4.55078 12.1989 4.47176 12.3897 4.33111 12.5303C4.19046 12.671 3.99969 12.75 3.80078 12.75H0.800781C0.601869 12.75 0.411103 12.671 0.270451 12.5303C0.129799 12.3897 0.0507813 12.1989 0.0507812 12C0.0507813 11.8011 0.129799 11.6103 0.270451 11.4697C0.411103 11.329 0.601869 11.25 0.800781 11.25H3.80078C3.99969 11.25 4.19046 11.329 4.33111 11.4697C4.47176 11.6103 4.55078 11.8011 4.55078 12ZM20.5363 3.5145C20.6769 3.65515 20.7559 3.84588 20.7559 4.04475C20.7559 4.24362 20.6769 4.43435 20.5363 4.575L18.4153 6.6975C18.3455 6.76713 18.2628 6.82235 18.1717 6.86C18.0806 6.89765 17.983 6.91699 17.8845 6.91692C17.6855 6.91678 17.4947 6.83758 17.354 6.69675C17.2844 6.62702 17.2292 6.54425 17.1915 6.45318C17.1539 6.36211 17.1345 6.26452 17.1346 6.16597C17.1348 5.96695 17.214 5.77613 17.3548 5.6355L19.4758 3.5145C19.6164 3.3739 19.8072 3.29491 20.006 3.29491C20.2049 3.29491 20.3956 3.3739 20.5363 3.5145ZM6.74678 17.304C6.88738 17.4446 6.96637 17.6354 6.96637 17.8342C6.96637 18.0331 6.88738 18.2239 6.74678 18.3645L4.62578 20.4855C4.48433 20.6221 4.29488 20.6977 4.09823 20.696C3.90158 20.6943 3.71347 20.6154 3.57442 20.4764C3.43536 20.3373 3.35648 20.1492 3.35478 19.9526C3.35307 19.7559 3.42866 19.5665 3.56528 19.425L5.68628 17.304C5.82693 17.1634 6.01766 17.0844 6.21653 17.0844C6.4154 17.0844 6.60614 17.1634 6.74678 17.304ZM20.5363 20.4855C20.3956 20.6261 20.2049 20.7051 20.006 20.7051C19.8072 20.7051 19.6164 20.6261 19.4758 20.4855L17.3548 18.3645C17.2182 18.223 17.1426 18.0336 17.1443 17.8369C17.146 17.6403 17.2249 17.4522 17.3639 17.3131C17.503 17.1741 17.6911 17.0952 17.8877 17.0935C18.0844 17.0918 18.2738 17.1674 18.4153 17.304L20.5363 19.425C20.6769 19.5656 20.7559 19.7564 20.7559 19.9552C20.7559 20.1541 20.6769 20.3449 20.5363 20.4855ZM6.74678 6.6975C6.60614 6.8381 6.4154 6.91709 6.21653 6.91709C6.01766 6.91709 5.82693 6.8381 5.68628 6.6975L3.56528 4.575C3.49365 4.50582 3.43651 4.42306 3.39721 4.33155C3.3579 4.24005 3.33721 4.14164 3.33634 4.04205C3.33548 3.94247 3.35445 3.84371 3.39216 3.75153C3.42988 3.65936 3.48557 3.57562 3.55598 3.5052C3.6264 3.43478 3.71014 3.37909 3.80232 3.34138C3.89449 3.30367 3.99325 3.2847 4.09283 3.28556C4.19242 3.28643 4.29083 3.30712 4.38233 3.34642C4.47384 3.38573 4.5566 3.44287 4.62578 3.5145L6.74678 5.6355C6.81663 5.70517 6.87204 5.78793 6.90985 5.87905C6.94766 5.97017 6.96712 6.06785 6.96712 6.1665C6.96712 6.26515 6.94766 6.36283 6.90985 6.45395C6.87204 6.54507 6.81663 6.62783 6.74678 6.6975Z"></path>
+                        </mask>
+                        <path d="M12.0508 16.5C10.8573 16.5 9.71271 16.0259 8.8688 15.182C8.02489 14.3381 7.55078 13.1935 7.55078 12C7.55078 10.8065 8.02489 9.66193 8.8688 8.81802C9.71271 7.97411 10.8573 7.5 12.0508 7.5C13.2443 7.5 14.3888 7.97411 15.2328 8.81802C16.0767 9.66193 16.5508 10.8065 16.5508 12C16.5508 13.1935 16.0767 14.3381 15.2328 15.182C14.3888 16.0259 13.2443 16.5 12.0508 16.5ZM12.0508 18C13.6421 18 15.1682 17.3679 16.2934 16.2426C17.4186 15.1174 18.0508 13.5913 18.0508 12C18.0508 10.4087 17.4186 8.88258 16.2934 7.75736C15.1682 6.63214 13.6421 6 12.0508 6C10.4595 6 8.93336 6.63214 7.80814 7.75736C6.68292 8.88258 6.05078 10.4087 6.05078 12C6.05078 13.5913 6.68292 15.1174 7.80814 16.2426C8.93336 17.3679 10.4595 18 12.0508 18ZM12.0508 0C12.2497 0 12.4405 0.0790176 12.5811 0.21967C12.7218 0.360322 12.8008 0.551088 12.8008 0.75V3.75C12.8008 3.94891 12.7218 4.13968 12.5811 4.28033C12.4405 4.42098 12.2497 4.5 12.0508 4.5C11.8519 4.5 11.6611 4.42098 11.5205 4.28033C11.3798 4.13968 11.3008 3.94891 11.3008 3.75V0.75C11.3008 0.551088 11.3798 0.360322 11.5205 0.21967C11.6611 0.0790176 11.8519 0 12.0508 0V0ZM12.0508 19.5C12.2497 19.5 12.4405 19.579 12.5811 19.7197C12.7218 19.8603 12.8008 20.0511 12.8008 20.25V23.25C12.8008 23.4489 12.7218 23.6397 12.5811 23.7803C12.4405 23.921 12.2497 24 12.0508 24C11.8519 24 11.6611 23.921 11.5205 23.7803C11.3798 23.6397 11.3008 23.4489 11.3008 23.25V20.25C11.3008 20.0511 11.3798 19.8603 11.5205 19.7197C11.6611 19.579 11.8519 19.5 12.0508 19.5ZM24.0508 12C24.0508 12.1989 23.9718 12.3897 23.8311 12.5303C23.6905 12.671 23.4997 12.75 23.3008 12.75H20.3008C20.1019 12.75 19.9111 12.671 19.7705 12.5303C19.6298 12.3897 19.5508 12.1989 19.5508 12C19.5508 11.8011 19.6298 11.6103 19.7705 11.4697C19.9111 11.329 20.1019 11.25 20.3008 11.25H23.3008C23.4997 11.25 23.6905 11.329 23.8311 11.4697C23.9718 11.6103 24.0508 11.8011 24.0508 12ZM4.55078 12C4.55078 12.1989 4.47176 12.3897 4.33111 12.5303C4.19046 12.671 3.99969 12.75 3.80078 12.75H0.800781C0.601869 12.75 0.411103 12.671 0.270451 12.5303C0.129799 12.3897 0.0507813 12.1989 0.0507812 12C0.0507813 11.8011 0.129799 11.6103 0.270451 11.4697C0.411103 11.329 0.601869 11.25 0.800781 11.25H3.80078C3.99969 11.25 4.19046 11.329 4.33111 11.4697C4.47176 11.6103 4.55078 11.8011 4.55078 12ZM20.5363 3.5145C20.6769 3.65515 20.7559 3.84588 20.7559 4.04475C20.7559 4.24362 20.6769 4.43435 20.5363 4.575L18.4153 6.6975C18.3455 6.76713 18.2628 6.82235 18.1717 6.86C18.0806 6.89765 17.983 6.91699 17.8845 6.91692C17.6855 6.91678 17.4947 6.83758 17.354 6.69675C17.2844 6.62702 17.2292 6.54425 17.1915 6.45318C17.1539 6.36211 17.1345 6.26452 17.1346 6.16597C17.1348 5.96695 17.214 5.77613 17.3548 5.6355L19.4758 3.5145C19.6164 3.3739 19.8072 3.29491 20.006 3.29491C20.2049 3.29491 20.3956 3.3739 20.5363 3.5145ZM6.74678 17.304C6.88738 17.4446 6.96637 17.6354 6.96637 17.8342C6.96637 18.0331 6.88738 18.2239 6.74678 18.3645L4.62578 20.4855C4.48433 20.6221 4.29488 20.6977 4.09823 20.696C3.90158 20.6943 3.71347 20.6154 3.57442 20.4764C3.43536 20.3373 3.35648 20.1492 3.35478 19.9526C3.35307 19.7559 3.42866 19.5665 3.56528 19.425L5.68628 17.304C5.82693 17.1634 6.01766 17.0844 6.21653 17.0844C6.4154 17.0844 6.60614 17.1634 6.74678 17.304ZM20.5363 20.4855C20.3956 20.6261 20.2049 20.7051 20.006 20.7051C19.8072 20.7051 19.6164 20.6261 19.4758 20.4855L17.3548 18.3645C17.2182 18.223 17.1426 18.0336 17.1443 17.8369C17.146 17.6403 17.2249 17.4522 17.3639 17.3131C17.503 17.1741 17.6911 17.0952 17.8877 17.0935C18.0844 17.0918 18.2738 17.1674 18.4153 17.304L20.5363 19.425C20.6769 19.5656 20.7559 19.7564 20.7559 19.9552C20.7559 20.1541 20.6769 20.3449 20.5363 20.4855ZM6.74678 6.6975C6.60614 6.8381 6.4154 6.91709 6.21653 6.91709C6.01766 6.91709 5.82693 6.8381 5.68628 6.6975L3.56528 4.575C3.49365 4.50582 3.43651 4.42306 3.39721 4.33155C3.3579 4.24005 3.33721 4.14164 3.33634 4.04205C3.33548 3.94247 3.35445 3.84371 3.39216 3.75153C3.42988 3.65936 3.48557 3.57562 3.55598 3.5052C3.6264 3.43478 3.71014 3.37909 3.80232 3.34138C3.89449 3.30367 3.99325 3.2847 4.09283 3.28556C4.19242 3.28643 4.29083 3.30712 4.38233 3.34642C4.47384 3.38573 4.5566 3.44287 4.62578 3.5145L6.74678 5.6355C6.81663 5.70517 6.87204 5.78793 6.90985 5.87905C6.94766 5.97017 6.96712 6.06785 6.96712 6.1665C6.96712 6.26515 6.94766 6.36283 6.90985 6.45395C6.87204 6.54507 6.81663 6.62783 6.74678 6.6975Z"
+                              fill="black" stroke="white" stroke-width="2" mask="url(#path-1-inside-1_977:1934)"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main" id="main">
+    <div class="relative flex items-center h-screen px-4 lg:px-0 bg-white dark:bg-dark" style="background-image: url(./img/top.png); background-size: cover;" id="top">
+        <div class="sticky z-10 w-full lg:w-2/5 2xl:w-1/2 mx-auto text-center mt-20">
+            <h1 class="heading text-3xl lg:text-5xl !leading-normal">未来を創造する</h1>
+            <h1 class="heading text-3xl lg:text-5xl !leading-normal">テクノロジーの先へ</h1>
+        </div>
+    </div>
+    <div class="py-20 md:py-24 bg-[#efefef] dark:bg-[#0b113a]" id="features">
+        <div class="container px-4 mx-auto">
+            <div class="w-full lg:w-1/2 2xl:w-1/2 mx-auto text-center">
+                <h2 class="heading text-3xl lg:text-5xl !leading-normal">
+                    事業内容
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 text-xl">社会に新たな価値を創造し、貢献する企業を目指しています。
+                </p>
+            </div>
+            <div class="mt-10">
+                <div class="flex flex-col lg:flex-row items-center justify-center flex-wrap">
+                    <div class="features-box">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-apps" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                                    <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                                    <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                                    <path d="M14 7l6 0" />
+                                    <path d="M17 4l0 6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    システム開発事業
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    お客様のニーズに合わせたシステムを提案し、
+                                    要件定義から保守まで、全てのフェーズにおいて、
+                                    幅広い業務アプリケーションに対応したスキルを保有しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-box">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-user-plus" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                                    <path d="M16 19h6" />
+                                    <path d="M19 16v6" />
+                                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    受託開発、技術者派遣事業
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    リサーチから企画、設計、試作、評価までのプロジェクトの一括受注、
+                                    または各工程に必要な技術者の派遣やサポートを行います。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-box ">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-bike" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M5 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M19 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M12 19l0 -4l-3 -3l5 -4l2 3l3 0" />
+                                    <path d="M17 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    モビリティサービス事業
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    モビリティ機器販売はじめました。Swgway-Ninebot、KINTONEを取り扱っております。
+                                    製品の詳細確認や購入は、最下部のLINEトークよりご連絡ください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-box">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-scooter-electric" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M18 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M6 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                    <path d="M8 17h5a6 6 0 0 1 5 -5v-5a2 2 0 0 0 -2 -2h-1" />
+                                    <path d="M10 4l-2 4h3l-2 4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    セグウェイ試乗イベント
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    セグウェイ体験イベントを随時開催しております。
+                                    また、イベントやセミナーの企画、運営などのご依頼もお待ちしております。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-box ">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-drone" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M10 10h4v4h-4z" />
+                                    <path d="M10 10l-3.5 -3.5" />
+                                    <path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96" />
+                                    <path d="M14 10l3.5 -3.5" />
+                                    <path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96" />
+                                    <path d="M14 14l3.5 3.5" />
+                                    <path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96" />
+                                    <path d="M10 14l-3.5 3.5" />
+                                    <path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    ドローンサービス事業(調整中)
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-box dark:features-box">
+                        <div class="py-4 px-1">
+                            <div class="icon-box mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto icon icon-tabler icon-tabler-seeding" width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#486af7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M12 10a6 6 0 0 0 -6 -6h-3v2a6 6 0 0 0 6 6h3" />
+                                    <path d="M12 14a6 6 0 0 1 6 -6h3v1a6 6 0 0 1 -6 6h-3" />
+                                    <path d="M12 20l0 -10" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading text-center text-2xl mb-2 leading-normal">
+                                    農業ＩＴサービス事業 (調整中)
+                                </h3>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                                <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                                    (調整中)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white bg-center bg-cover bg-no-repeat dark:bg-dark pt-24 pb-10 md:py-32"
+         id="experience">
+        <div class="container flex flex-col lg:flex-row items-center justify-around px-4 mx-auto">
+            <div class="lg:w-1/2 2xl:w-1/2 mr-8 basis-1/2">
+                <div class="mx-auto my-4 px-4">
+                    <h2 class="heading text-3xl lg:text-5xl !leading-normal">
+                        実績
+                    </h2>
+                </div>
+                <div class="items-center">
+                    <div class="mx-3">
+                        <h3 class="heading leading-normal text-xl mb-2">システム・アプリ
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・経営管理・販売管理・生産管理
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・物流管理・在庫管理・金融管理
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・資産管理・障害管理・稼働管理
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・設備管理・保守管理・ログ管理
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・請求管理・工事管理・予実算管理
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・LINE/Teams連携他
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal	">
+                            開発言語(ツールなど含む) 
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・AP(HTML、CSS、JS、Java、.net、Python、他)
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・DB(Oracle、SQLserver、PostgreSQL、mysql、他)
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・他(Outsystems、PowerApps、OracleODI/BI、RPA、IOT、Excelマクロ、JP1、hinemos、ZABBIX、他)
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal	">
+                            セグウェイ試乗イベント
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・令和 4 年 11 月
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・令和 5 年 05 月  東櫛原 地区公園にて開催
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・令和 5 年 04 月 美松町 町内会からのご依頼で開催
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ・令和 5 年 04 月 久留米市内 夏祭りに参加、開催
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img mt-24 lg:mt-0 ml-8 basis-1/2 hidden lg:block">
+                <img src="img/experience.png" class="w-full" alt="Ipad">
+            </div>
+        </div>
+    </div>
+    <div class="bg-white bg-center bg-cover bg-no-repeat dark:bg-dark pt-24 pb-10 md:py-32"
+         id="company-data">
+        <div class="container flex flex-col lg:flex-row items-center justify-around px-4 mx-auto">
+            <div class="lg:w-1/2 2xl:w-1/2 mr-8 basis-1/2">
+                <div class="mx-auto my-4 px-4">
+                    <h2 class="heading text-3xl lg:text-5xl !leading-normal">
+                        会社案内
+                    </h2>
+                </div>
+                <div class="items-center">
+                    <div class="mx-3">
+                        <h3 class="heading leading-normal text-xl mb-2">社名
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            株式会社Q-innovations 
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            設立
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            2021年12月
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            住所
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            福岡オフィス: 
+                            〒810-0004 
+                            福岡県福岡市中央区渡辺通2-8-1 フェリス薬院501
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            筑紫野オフィス: 
+                            〒818-0068 
+                            福岡県筑紫野市石崎3-8-27
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            代表取締役CEO
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            黒﨑 伸二
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            資本金
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            1,000万円
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            加入団体
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            産業技術総合研究所
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            スマートモビリティチャレンジ推進協議会
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            主な取引先
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            Qsol株式会社
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            株式会社 日本コンピュータコンサルタント
+                        </p>
+                    </div>
+                    <div class="mx-3 mt-4">
+                        <h3 class="heading font-black text-xl mb-2 leading-normal">
+                            取引先銀行
+                        </h3>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            福岡銀行
+                        </p>
+                        <p class="text-base text-gray-500 dark:text-gray-400 opacity-90">
+                            ゆうちょ銀行
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="img mt-24 lg:mt-0 ml-8 basis-1/2">
+                <div class="">
+                    <img src="img/company.svg" class="w-full" alt="company">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-us py-16 bg-white dark:bg-dark" id="contact-us">
+        <div class="container flex flex-col lg:flex-row items-stretch justify-center gap-8 px-4 md:px-10 lg:px-0 mx-auto">
+            <div class="ticket basis-2/3 ml-0 lg:ml-8 bg-gray-dark dark:bg-slate-800 rounded">
+                <div class="py-16 px-6 lg:px-12">
+                    <div class="form-title">
+                        <h2 class="heading text-2xl lg:text-3xl font-bold !leading-normal">
+                            お問い合わせ
+                        </h2>
+                        <p class="text-gray-500 dark:text-gray-400 text-opacity-90 text-base font-bold">
+                            仕事の依頼、見積、求人など
+                        </p>
+                    </div>
+                    <div class="form-contact mt-10">
+                        <form id="contactForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfoid9bpHW2twmhOVugojOdkSFf_X2LGponOo1HQGOcWKn9Kg/formResponse" method="POST" target="dummyIframe">
+                        <iframe name="dummyIframe" style="display:none;"></iframe>
+                            <div class="flex flex-col lg:flex-row justify-center items-center mt-2 mb-6">
+                                <div class="flex flex-col basis-full w-full lg:basis-1/2 mr-0 lg:mr-3 my-3 lg:my-0">
+                                    <label for="name" class="form-label">お名前</label>
+                                    <input type="text" id="name" name="entry.1169093537" class="form-input" required>
+                                </div>
+                                <div class="flex flex-col basis-full w-full lg:basis-1/2 ml-0 lg:ml-3 my-3 lg:my-0">
+                                    <label for="email" class="form-label">メールアドレス</label>
+                                    <input type="email" id="email" name="entry.1073708205" class="form-input" required>
+                                </div>
+                            </div>
+                            <div class="flex flex-col my-4">
+                                <label for="category" class="form-label">お問い合わせ内容</label>
+                                <select id="category" name="entry.421127214" class="form-input"
+                                required>
+                                <option value="事業内容について興味がある">事業内容について興味がある</option>
+                                <option value="採用について興味がある">採用について興味がある</option>
+                                <option value="その他">その他</option>
+                            </select>
+                            </div>
+                            <div class="flex flex-col my-4">
+                                <label for="message" class="form-label">詳細</label>
+                                <textarea id="message" name="entry.1389717228" cols="30" rows="8" class="resize-none form-input"
+                                          required></textarea>
+                            </div>
+                            <div class="mt-4">
+                                <button id="send-message" type="submit" class="btn bg-[#4a6cf7] opacity-90 py-3">送信</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="img lg:mt-0 ml-8 hidden lg:block">
+                <img src="img/contact.svg" class="w-full" alt="contact">
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <div class="top-content py-16 bg-[#4A6CF7] bg-opacity-5">
+            <div class="container flex md:flex-row flex-wrap lg:flex-nowrap items-start justify-between px-4 mx-auto">
+                <div class="basis-full lg:basis-1/3 mb-6 lg:mb-0">
+                    <div class="footer-logo mb-7">
+                        <img src="./img/logo-light.png" alt="logo" class="hidden dark:block w-44">
+                        <img src="./img/logo.png" alt="logo" class="block dark:hidden w-44">
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">
+                        〒810-0004
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg mb-2">
+                        福岡県福岡市中央区渡辺通2-8-1 フェリス薬院501
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">
+                        〒818-0068
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg mb-2">
+                        福岡県筑紫野市石崎3-8-27
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 opacity-90 text-lg">
+                        TEL：000-000-000
+                    </p>
+                    <div class="mt-2">
+                        <a href="https://line.me/R/ti/p/@999kxrrt?from=page&searchId=999kxrrt" class="social" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50">
+                                <path d="M 9 4 C 6.24 4 4 6.24 4 9 L 4 41 C 4 43.76 6.24 46 9 46 L 41 46 C 43.76 46 46 43.76 46 41 L 46 9 C 46 6.24 43.76 4 41 4 L 9 4 z M 25 11 C 33.27 11 40 16.359219 40 22.949219 C 40 25.579219 38.959297 27.960781 36.779297 30.300781 C 35.209297 32.080781 32.660547 34.040156 30.310547 35.660156 C 27.960547 37.260156 25.8 38.519609 25 38.849609 C 24.68 38.979609 24.44 39.039062 24.25 39.039062 C 23.59 39.039062 23.649219 38.340781 23.699219 38.050781 C 23.739219 37.830781 23.919922 36.789063 23.919922 36.789062 C 23.969922 36.419063 24.019141 35.830937 23.869141 35.460938 C 23.699141 35.050938 23.029062 34.840234 22.539062 34.740234 C 15.339063 33.800234 10 28.849219 10 22.949219 C 10 16.359219 16.73 11 25 11 z M 23.992188 18.998047 C 23.488379 19.007393 23 19.391875 23 20 L 23 26 C 23 26.552 23.448 27 24 27 C 24.552 27 25 26.552 25 26 L 25 23.121094 L 27.185547 26.580078 C 27.751547 27.372078 29 26.973 29 26 L 29 20 C 29 19.448 28.552 19 28 19 C 27.448 19 27 19.448 27 20 L 27 23 L 24.814453 19.419922 C 24.602203 19.122922 24.294473 18.992439 23.992188 18.998047 z M 15 19 C 14.448 19 14 19.448 14 20 L 14 26 C 14 26.552 14.448 27 15 27 L 18 27 C 18.552 27 19 26.552 19 26 C 19 25.448 18.552 25 18 25 L 16 25 L 16 20 C 16 19.448 15.552 19 15 19 z M 21 19 C 20.448 19 20 19.448 20 20 L 20 26 C 20 26.552 20.448 27 21 27 C 21.552 27 22 26.552 22 26 L 22 20 C 22 19.448 21.552 19 21 19 z M 31 19 C 30.448 19 30 19.448 30 20 L 30 26 C 30 26.552 30.448 27 31 27 L 34 27 C 34.552 27 35 26.552 35 26 C 35 25.448 34.552 25 34 25 L 32 25 L 32 24 L 34 24 C 34.553 24 35 23.552 35 23 C 35 22.448 34.553 22 34 22 L 32 22 L 32 21 L 34 21 C 34.552 21 35 20.552 35 20 C 35 19.448 34.552 19 34 19 L 31 19 z"></path>
+                            </svg>
+                        </a>
+                        <!-- <a href="" class="social">
+                            <svg width="25" height="25" viewBox="0 0 9 18">
+                                <path d="M8.13643 7H6.78036H6.29605V6.43548V4.68548V4.12097H6.78036H7.79741C8.06378 4.12097 8.28172 3.89516 8.28172 3.55645V0.564516C8.28172 0.254032 8.088 0 7.79741 0H6.02968C4.11665 0 2.78479 1.58064 2.78479 3.92339V6.37903V6.94355H2.30048H0.65382C0.314802 6.94355 0 7.25403 0 7.70564V9.7379C0 10.1331 0.266371 10.5 0.65382 10.5H2.25205H2.73636V11.0645V16.7379C2.73636 17.1331 3.00273 17.5 3.39018 17.5H5.66644C5.81174 17.5 5.93281 17.4153 6.02968 17.3024C6.12654 17.1895 6.19919 16.9919 6.19919 16.8226V11.0927V10.5282H6.70771H7.79741C8.11222 10.5282 8.35437 10.3024 8.4028 9.96371V9.93548V9.90726L8.74182 7.95968C8.76604 7.7621 8.74182 7.53629 8.59653 7.31048C8.54809 7.16935 8.33016 7.02823 8.13643 7Z"></path>
+                            </svg>
+                        </a>
+                        <a href="" class="social">
+                            <svg width="25" height="25" viewBox="0 0 18 14">
+                                <path d="M17.5058 2.07119C17.3068 1.2488 16.7099 0.609173 15.9423 0.395963C14.5778 7.26191e-08 9.0627 0 9.0627 0C9.0627 0 3.54766 7.26191e-08 2.18311 0.395963C1.41555 0.609173 0.818561 1.2488 0.619565 2.07119C0.25 3.56366 0.25 6.60953 0.25 6.60953C0.25 6.60953 0.25 9.68585 0.619565 11.1479C0.818561 11.9703 1.41555 12.6099 2.18311 12.8231C3.54766 13.2191 9.0627 13.2191 9.0627 13.2191C9.0627 13.2191 14.5778 13.2191 15.9423 12.8231C16.7099 12.6099 17.3068 11.9703 17.5058 11.1479C17.8754 9.68585 17.8754 6.60953 17.8754 6.60953C17.8754 6.60953 17.8754 3.56366 17.5058 2.07119ZM7.30016 9.44218V3.77687L11.8771 6.60953L7.30016 9.44218Z"></path>
+                            </svg>
+                        </a> -->
+                        <a href="#" class="social">
+                            <svg width="30" height="30" viewBox="0 0 17 16">
+                                <path d="M15.2196 0H1.99991C1.37516 0 0.875366 0.497491 0.875366 1.11936V14.3029C0.875366 14.8999 1.37516 15.4222 1.99991 15.4222H15.1696C15.7943 15.4222 16.2941 14.9247 16.2941 14.3029V1.09448C16.3441 0.497491 15.8443 0 15.2196 0ZM5.44852 13.1089H3.17444V5.7709H5.44852V13.1089ZM4.29899 4.75104C3.54929 4.75104 2.97452 4.15405 2.97452 3.43269C2.97452 2.71133 3.57428 2.11434 4.29899 2.11434C5.02369 2.11434 5.62345 2.71133 5.62345 3.43269C5.62345 4.15405 5.07367 4.75104 4.29899 4.75104ZM14.07 13.1089H11.796V9.55183C11.796 8.7061 11.771 7.58674 10.5964 7.58674C9.39693 7.58674 9.222 8.53198 9.222 9.47721V13.1089H6.94792V5.7709H9.17202V6.79076H9.19701C9.52188 6.19377 10.2466 5.59678 11.3711 5.59678C13.6952 5.59678 14.12 7.08925 14.12 9.12897V13.1089H14.07Z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/qinnovations.insta/?igsh=MW45MnU2M2VyNjhwMQ%3D%3D&utm_source=qr" class="social" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 50 50">
+                                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="md:basis-1/3 lg:basis-[15%] my-6 lg:my-0">
+                    <h4 class="heading text-xl mb-7">Line公式アカウント</h4>
+                    <a href="https://line.me/R/ti/p/@999kxrrt?from=page&searchId=999kxrrt" target="_blank">
+                        <img src="./img/QR-code.png" style="width: 180px;" alt="QR-code">
+                    </a>
+                </div> -->
+                <div class="md:basis-1/3 lg:basis-[15%] my-6 lg:my-0">
+                    <h4 class="heading text-xl mb-7">福岡オフィスへのアクセス</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.853316328706!2d130.39843798771793!3d33.583157573618465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541919df2fce89d%3A0x7644578c0062a2e5!2z44ixUS1pbm5vdmF0aW9ucyDnpo_lsqHjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1705989952396!5m2!1sja!2sjp" width="350" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="md:basis-1/3 lg:basis-[15%] my-6 lg:my-0">
+                    <h4 class="heading text-xl mb-7">筑紫野オフィスへのアクセス</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.502775502435!2d130.52843927618687!3d33.488293947297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354199604851fa33%3A0xe447a703281b3d!2z44CSODE4LTAwNjgg56aP5bKh55yM562R57Sr6YeO5biC55-z5bSO77yT5LiB55uu77yY4oiS77yS77yX!5e0!3m2!1sja!2sjp!4v1705996574985!5m2!1sja!2sjp" width="350" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right bg-[#4A6CF7] bg-opacity-10 p-8">
+            <div class="container mx-auto text-gray-500 dark:text-gray-400 text-center text-base font-bold">
+                <p>© 2024, Q-innovations Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
